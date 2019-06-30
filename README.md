@@ -4,11 +4,18 @@ Snowflake Database tutorial
 # Snowflake hands-on
 ## Pre-requisites
 - Snowflake account
-    - user with AccountAdmin or SecurityAdmin role
+- user with AccountAdmin or SecurityAdmin role
 - snowsql installation
 - Sample data files
 
+# Install Snow SQL ( goto help and download ) below instructions
 
+~/.snowsql/config file
+```
+accountname = <account_name>
+username = <account_name>
+password = <password> 
+```
 ## Hands-on
 ### Step-1:  
 login to SnowSQL
