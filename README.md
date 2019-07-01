@@ -16,6 +16,12 @@ accountname = <account_name>
 username = <account_name>
 password = <password> 
 ```
+On MacOS run
+
+```
+/Applications/SnowSQL.app/Contents/MacOS/snowsql -a <username> -u <username>
+```
+
 ## Hands-on
 ### Step-1:  
 login to SnowSQL
