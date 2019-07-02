@@ -31,10 +31,11 @@ OVERWRITE=TRUE
 SINGLE=TRUE;
 
 Linux/MacOS
-snowsql -c my_example_connection -d sales_db -s public -q 'select * from mytable limit 10' -o output_format=csv -o header=false -o timing=false -o friendly=false  > output_file.csv
+snowsql -c example -d sf_tuts -w SF_TUTS_WH -q 'select * from EMP_BASIC' -o output_format=csv -o header=false -o timing=false -o friendly=false  > output_file.csv
 
 Windows
-snowsql -c my_example_connection -d sales_db -s public -q "select * from mytable limit 10" -o output_format=csv -o header=false -o timing=false -o friendly=false  > output_file.csv
+snowsql -c example -d sf_tuts -w SF_TUTS_WH -q "select * from EMP_BASIC" -o output_format=csv -o header=false -o timing=false -o friendly=false  > output_file.csv
+
 
 
 https://sqlkover.com/cool-stuff-in-snowflake-part-7-creating-tables/
