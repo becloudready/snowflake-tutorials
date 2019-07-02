@@ -71,7 +71,7 @@ put file:///tmp/employees0*.csv @sf_tuts.public.%emp_basic;
 ```
 Windows
 ```
-put file:///tmp/employees0*.csv @sf_tuts.public.%emp_basic;
+put file://c:\temp\employees0*.csv @sf_tuts.public.%emp_basic;
 ```
 
 list files
