@@ -30,3 +30,12 @@ copy into EMP_BASIC
   file_format = (type = csv field_optionally_enclosed_by='"')
   pattern = '.*employees0[1-5].csv'
   on_error = 'skip_file';
+
+create storage integration s3_int
+  type = external_stage
+  storage_provider = s3
+  enabled = true
+  storage_aws_role_arn = 'arn:aws:iam::001234567890:role/myrole'
+  storage_allowed_locations = ('s3://mybucket1/mypath1/', 's3://mybucket2/mypath2/')
+  storage_blocked_locations = ('s3://mybucket1/mypath1/sensitivedata/', 's3://mybucket2/mypath2/sensitivedata/');
+
