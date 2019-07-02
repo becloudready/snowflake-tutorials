@@ -112,5 +112,8 @@ drop database if exists sf_tuts;
 drop warehouse if exists sf_tuts_wh;
 ```
 
+## Onloading data
+
+https://docs.snowflake.net/manuals/user-guide/data-unload-s3.html
 
 Credits: https://docs.snowflake.net/manuals/user-guide-getting-started.html
